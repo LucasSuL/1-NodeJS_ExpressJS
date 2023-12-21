@@ -1,2 +1,1 @@
-MODIFIED
-MODIFIED
+this is content of test2.txt

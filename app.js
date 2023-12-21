@@ -1,21 +1,8 @@
-// const amount = 9;
-// if(amount > 9){
-//     console.log('big number');
-// }else{
-//     console.log('small number');
-// }
-// console.log('end');
-// console.log(__filename);
+const EventEmitter = require('events') //EventEmitter is a class
+const myEmitter = new EventEmitter(); // create an instance
 
-// function print(){
-//     console.log('hello, world');
-// }
-// setInterval(print, 1000)
+myEmitter.on('myEvent', ()=>{
+    console.log('Event triggered');
+})
 
-
-
-const names = require('./names')
-// const sayHi = require('./utils')
-// console.log(names);
-
-// sayHi(names.john)
+myEmitter.emit('myEvent',{message: 'Hello'})

@@ -23,5 +23,3 @@ console.log(names);
 sayHi(names.john)
 
 console.log('test npm run dev');
-
-
